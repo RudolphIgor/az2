@@ -4,40 +4,61 @@
 	&__container {
 		box-sizing: border-box;
 		max-width: 1245px;
-		// height: 109px;
 		margin: 0px auto;
-		// padding: 0px 12px 0px 12px;
-		padding: 44px 12px 44px 12px;
+		padding: 37px 12px 37px 12px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-	}
-
-	&_active {
-		padding: 44px 12px 144px 12px;
+		&_active {
+			padding: 37px 12px 144px 12px;
+		}
 	}
 }
 
 .logo {
 	margin: 0px 91px 0px 0px;
 
-	& > img {
-		@media (max-width: 576px){
-			width: 29px;
-			height: 42px;
+	@media (max-width: 576px) {
+	}
+	& > a {
+		color: #fff;
+		font-size: 35px;
+		font-weight: 600;
+		position: relative;
+		padding: 4px 0px 0px 59px;
+
+		@media (max-width: 576px) {
+			font-size: 25px;
+			padding: 6px 0px 0px 45px;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			width: 41px;
+			height: 35px;
+			top: 50%;
+			left: 0;
+			margin: -19.5px 0px 0px 0px;
+			z-index: 5;
+			background: url("@img/svg/logo_photo.svg") center center no-repeat;
+			background-size: contain;
+			@media (max-width: 576px) {
+				width: 29px;
+				height: 42px;
+				margin: -21.5px 0px 0px 0px;
+			}
 		}
 	}
-	@media (max-width: 1240px){
+
+	@media (max-width: 1240px) {
 		margin: 0px 27px 0px 0px;
 	}
 
-	
-
-	@media (max-width: 767px){
+	@media (max-width: 767px) {
 		margin: 0;
 	}
 
-	@media (max-width: 576px){
+	@media (max-width: 576px) {
 		font-size: 25px;
 	}
 }
@@ -46,37 +67,16 @@
 	margin: 0px 91px 0px 0px;
 	letter-spacing: normal;
 
-	@media (max-width: 1240px){
+	@media (max-width: 1240px) {
 		margin: 0px 27px 0px 0px;
 	}
 
-	@media (max-width: 767px){
+	@media (max-width: 767px) {
 		position: fixed;
-		top: 187px;
-		left: 35%;
-		margin: 0;
+		top: 20%;
+		left: 50%;
+		margin: 0px 0px 0px -114px;
 	}
-	@media (max-width: 700px){
-		left: 30%;
-	
-		
-	}
-	@media (max-width: 576px){
-		left: 30%;
-	}
-	@media (max-width: 476px){
-		left: 26%;
-	}
-	@media (max-width: 400px){
-		left: 20%;
-	}
-	@media (max-width: 360px){
-		left: 20%;
-	}
-	@media (max-width: 340px){
-		left: 15%;
-	}
-	
 }
 .menu__list {
 	display: flex;
@@ -87,47 +87,45 @@
 	display: flex;
 	&:not(:last-child) {
 		margin: 0px 50px 0px 0px;
-		@media (max-width: 1240px){
+		@media (max-width: 1240px) {
 			margin: 0;
 		}
-		@media (max-width: 767px){
+		@media (max-width: 767px) {
 			margin: 0px 45px 0px 0px;
 		}
 	}
 
 	& > li {
 		font-size: 17px;
-		@media (max-width: 767px){
+		@media (max-width: 767px) {
 			text-align: center;
 		}
-		@media (max-width: 576px){
+		@media (max-width: 576px) {
 			font-size: 14px;
 		}
-		
 	}
-	
+
 	& > li:not(:last-child) {
 		margin: 0px 50px 0px 0px;
-		@media (max-width: 767px){
+		@media (max-width: 767px) {
 			margin: 0;
 			margin: 0px 0px 14px 0px;
 		}
 	}
-	
+
 	& > li.menu__link_hiden {
-		@media (max-width: 1240px){
+		@media (max-width: 1240px) {
 			display: none;
 		}
 
-		@media (max-width: 767px){
+		@media (max-width: 767px) {
 			display: block;
 		}
 	}
 
-	@media (max-width: 767px){
+	@media (max-width: 767px) {
 		flex-direction: column;
 	}
-
 }
 .menu__link {
 	font-family: Montserrat;
@@ -135,7 +133,7 @@
 	font-weight: 400;
 }
 
-.phone>a {
+.phone > a {
 	font-family: Montserrat;
 	color: #fff;
 	font-size: 17px;
@@ -144,19 +142,19 @@
 	padding: 0px 0px 0px 50px;
 
 	&::before {
-		content: '';
+		content: "";
 		position: absolute;
 		width: 31px;
 		height: 31px;
 		top: -30%;
 		left: 0;
 		z-index: 5;
-		background: url('@img/svg/phone.svg') center center no-repeat;
-		@media (max-width: 576px){
+		background: url("@img/svg/phone.svg") center center no-repeat;
+		@media (max-width: 576px) {
 			display: none;
 		}
 	}
-	@media (max-width: 576px){
+	@media (max-width: 576px) {
 		font-size: 12px;
 		padding: 0px 0px 0px 0px;
 	}
@@ -164,7 +162,7 @@
 
 .menu__icon {
 	display: none;
-	@media (max-width: 767px){
+	@media (max-width: 767px) {
 		display: block;
 		position: relative;
 		width: 22px;
@@ -180,12 +178,12 @@
 			height: 10%;
 			width: 100%;
 			transition: all 0.3s ease 0s;
-			background: #8C7870;
+			background: #8c7870;
 		}
 
 		&::before,
 		&::after {
-			content: '';
+			content: "";
 		}
 
 		&::before {
@@ -202,4 +200,3 @@
 		}
 	}
 }
-
