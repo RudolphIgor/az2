@@ -20,8 +20,25 @@
 
 .logo {
 	margin: 0px 91px 0px 0px;
+
+	& > img {
+		@media (max-width: 576px){
+			width: 29px;
+			height: 42px;
+		}
+	}
 	@media (max-width: 1240px){
 		margin: 0px 27px 0px 0px;
+	}
+
+	
+
+	@media (max-width: 767px){
+		margin: 0;
+	}
+
+	@media (max-width: 576px){
+		font-size: 25px;
 	}
 }
 .menu__body {
@@ -38,6 +55,26 @@
 		top: 187px;
 		left: 35%;
 		margin: 0;
+	}
+	@media (max-width: 700px){
+		left: 30%;
+	
+		
+	}
+	@media (max-width: 576px){
+		left: 30%;
+	}
+	@media (max-width: 476px){
+		left: 26%;
+	}
+	@media (max-width: 400px){
+		left: 20%;
+	}
+	@media (max-width: 360px){
+		left: 20%;
+	}
+	@media (max-width: 340px){
+		left: 15%;
 	}
 	
 }
@@ -62,6 +99,8 @@
 		font-size: 17px;
 		@media (max-width: 767px){
 			text-align: center;
+		}
+		@media (max-width: 576px){
 			font-size: 14px;
 		}
 		
@@ -113,6 +152,13 @@
 		left: 0;
 		z-index: 5;
 		background: url('@img/svg/phone.svg') center center no-repeat;
+		@media (max-width: 576px){
+			display: none;
+		}
+	}
+	@media (max-width: 576px){
+		font-size: 12px;
+		padding: 0px 0px 0px 0px;
 	}
 }
 
