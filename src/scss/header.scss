@@ -1,0 +1,74 @@
+.header {
+	background: #000;
+	color: #fff;
+	&__container {
+		box-sizing: border-box;
+		max-width: 1245px;
+		height: 109px;
+		margin: 0px auto;
+		padding: 0px 12px 0px 12px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.logo {
+	margin: 0px 91px 0px 0px;
+	@media (max-width: 1240px){
+		margin: 0px 27px 0px 0px;
+	}
+	
+}
+.menu__body {
+	display: flex;
+	margin: 0px 91px 0px 0px;
+	letter-spacing: normal;
+
+	@media (max-width: 1240px){
+		margin: 0px 27px 0px 0px;
+	}
+	
+}
+.menu__list {
+	display: flex;
+	justify-content: space-between;
+
+	& > li.menu__link_hiden {
+		@media (max-width: 1240px){
+			display: none;
+		}
+	}
+	& > li:not(:last-child) {
+		margin: 0px 50px 0px 0px;
+	}
+}
+.menu__link {
+	font-family: Montserrat;
+	color: #fff;
+	font-weight: 400;
+	font-size: 17px;
+	
+}
+
+.phone>a {
+	font-family: Montserrat;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 600;
+	position: relative;
+	padding: 0px 0px 0px 50px;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 31px;
+		height: 31px;
+		top: -30%;
+		left: 0;
+		z-index: 5;
+		background: url('@img/svg/phone.svg') center center no-repeat;
+		
+	}
+}
+

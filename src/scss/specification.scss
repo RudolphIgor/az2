@@ -7,18 +7,36 @@
 	box-sizing: border-box;
 }
 
+ul,
+ol,
+li {
+	list-style: none;
+	
+}
+
+a {
+	text-decoration: none;
+	
+}
+
 .container {
-	max-width: 1194px;
+	max-width: 1634px;
 	margin: 0px auto;
-	border: 1px solid red;
+	// border: 1px solid red;
 	padding: 0px 12px 0px 12px;
 	display: flex;
 	flex-wrap: wrap;
 	
 }
 
-.test {
-	border: 1px solid rgb(35, 20, 79);
-	flex: 0 0 33.333%;
-	
+.logo {
+	font-family: Mak;
+	text-transform: uppercase;
+	font-size: 35px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	&__img {
+		margin: 0px 18px 0px 0px;
+	}
 }
