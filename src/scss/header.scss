@@ -78,18 +78,17 @@ body {
 	background: #fff;
 	display: none;
 
-	@media (max-width:767px) {
+	@media (max-width: 767px) {
 		display: block;
 		top: 13.2%;
 		width: 92%;
 		margin-left: -46%;
 	}
-	@media (max-width:576px) {
+	@media (max-width: 576px) {
 		top: 12.2%;
 		width: 85.5%;
 		margin-left: -43%;
 	}
-
 }
 .menu__body {
 	display: flex;
@@ -126,7 +125,7 @@ body {
 
 .block {
 	display: flex;
-	
+
 	&:not(:last-child) {
 		margin: 0px 50px 0px 0px;
 		@media (max-width: 1240px) {
@@ -140,11 +139,11 @@ body {
 	& > li {
 		cursor: pointer;
 		position: relative;
+		z-index: 2;
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
-			background: url('@img/svg/hover_menu_desc.svg') center center no-repeat;
-			z-index: 10;
+			background: url("@img/svg/hover_menu_desc.svg") center center no-repeat;
 			width: 120px;
 			height: 43px;
 			margin: -17.5px 0px 0px -61px;
@@ -153,7 +152,7 @@ body {
 			opacity: 0;
 		}
 
-		&:hover::before{
+		&:hover::before {
 			opacity: 1;
 		}
 
@@ -184,8 +183,6 @@ body {
 		}
 	}
 
-
-
 	@media (max-width: 767px) {
 		flex-direction: column;
 	}
@@ -195,18 +192,10 @@ body {
 	color: #fff;
 	font-weight: 400;
 	position: relative;
-	
-	// z-index: 10;
-	&::before {
-	
-	}
-
-	
 
 	&:hover::before {
 		opacity: 1;
 	}
-
 }
 
 .phone > a {
@@ -275,20 +264,18 @@ body {
 			transform: scale(1) translate(0px, -50%);
 		}
 
-		&_active span{
+		&_active span {
 			transform: scale(0) translate(0px, 0px);
 		}
-		&_active::before{
+		&_active::before {
 			height: 3px;
-			top:50%;
+			top: 50%;
 			transform: rotate(-45deg) translate(0px, 0px);
 		}
-		&_active::after{
+		&_active::after {
 			height: 3px;
-			top:50%;
+			top: 50%;
 			transform: rotate(45deg) translate(0px, 0px);
 		}
 	}
 }
-
-

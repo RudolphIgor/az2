@@ -8,7 +8,7 @@ export function iconsactive() {
 			iconmenu.classList.toggle('menu__icon_active');
 			menubody.classList.toggle('menu__body_active');
 			headerContainer.classList.toggle('header__container_active');
-			linedecor.classList.toggle('line-decore_active');
+			// linedecor.classList.toggle('line-decore_active');
 		});
 	}
 } 
