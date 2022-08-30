@@ -10,7 +10,13 @@
 	letter-spacing: 0;
 	text-align: center;
 
-	@media (max-width:767px){
+	@media (max-width:686px){
+		font-size: 20px;
+	}
+	@media (max-width:588px){
+		font-size: 15px;
+	}
+	@media (max-width:532px){
 		font-size: 10px;
 	}
 }
@@ -24,12 +30,24 @@
 	& > span {
 		&:nth-child(1){
 			width: 152px;
+			@media (max-width:532px){
+				width: 61px;
+			}
 		}
 		&:nth-child(2){
 			width: 231px;
+			@media (max-width:588px){
+				width: 145px;
+			}
+			@media (max-width:532px){
+				width: 93px;
+			}
 		}
 		&:nth-child(3){
 			width: 138px;
+			@media (max-width:532px){
+				width: 55px;
+			}
 		}
 	}
 
