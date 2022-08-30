@@ -5,7 +5,7 @@
 	&__container {
 		position: relative;
 		box-sizing: border-box;
-		max-width: 1245px;
+		max-width: 1268px;
 		margin: 0px auto;
 		padding: 37px 24px 37px 24px;
 		display: flex;
@@ -21,7 +21,7 @@ body {
 	background: rgb(229, 58, 58);
 }
 .logo {
-	margin: 0px 91px 0px 0px;
+	// margin: 0px 91px 0px 0px;
 
 	@media (max-width: 576px) {
 	}
@@ -93,7 +93,7 @@ body {
 }
 .menu__body {
 	display: flex;
-	margin: 0px 91px 0px 0px;
+	// margin: 0px 91px 0px 0px;
 	letter-spacing: normal;
 	position: relative;
 	transition: all 0.3s ease 0s;
