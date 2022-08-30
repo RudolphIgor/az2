@@ -274,6 +274,20 @@ body {
 			top: 50%;
 			transform: scale(1) translate(0px, -50%);
 		}
+
+		&_active span{
+			transform: scale(0) translate(0px, 0px);
+		}
+		&_active::before{
+			height: 3px;
+			top:50%;
+			transform: rotate(-45deg) translate(0px, 0px);
+		}
+		&_active::after{
+			height: 3px;
+			top:50%;
+			transform: rotate(45deg) translate(0px, 0px);
+		}
 	}
 }
 
