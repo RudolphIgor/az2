@@ -239,13 +239,15 @@
 
 
 
-//Icons
+/*--------------ICONS-------------------*/
 .insta {
 	background: url('@img/svg/insta.svg') center center/ contain no-repeat;
-	// background-size: cover;
 	width: 30px;
 	height: 30px;
 	display: block;
+	&:hover {
+		background: url('@img/svg/insta_hover.svg') center center/ contain no-repeat;
+	}
 	//RESPONSIVE 
 	@media (max-width: 620px){
 		width: 20px;
@@ -257,6 +259,10 @@
 	width: 33px;
 	height: 19px;
 	display: block;
+	&:hover {
+		background: url('@img/svg/vk_hover.svg')  center center/ contain no-repeat;
+	}
+	//RESPONSIVE 
 	@media (max-width: 620px){
 		width: 20px;
 		height: 12px;
@@ -267,6 +273,10 @@
 	width: 28px;
 	height: 23px;
 	display: block;
+	&:hover {
+		background: url('@img/svg/telegram_hover.svg')  center center/ contain no-repeat;
+	}
+	//RESPONSIVE 
 	@media (max-width: 620px){
 		width: 17px;
 		height: 14px;
@@ -277,6 +287,10 @@
 	width: 33px;
 	height: 33px;
 	display: block;
+	&:hover {
+		background: url('@img/svg/whatsup_hover.svg')  center center/ contain no-repeat;
+	}
+	//RESPONSIVE 
 	@media (max-width: 620px){
 		width: 20px;
 		height: 20px;
