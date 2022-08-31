@@ -26,23 +26,44 @@
 		background: #fff;
 		height: 162px;
 		width: 1px;
+
+		//RESPOSIVE after & before
+		@media (max-width: 716px){
+			height: 1px;
+			width: 80px;
+		}
 	}
 
-	&::after {
-		top: -192px;
-		left: 50%;
-	}
-
+	//row-social
 	&::before {
 		bottom: -192px;
 		left: 50%;
+
+		//RESPOSIVE before
+		@media (max-width: 716px){
+			bottom: 50%;
+			left: -50%;
+		}
+	}
+	//row-social
+	&::after {
+		top: -192px;
+		right: 50%;
+
+		//RESPOSIVE after
+		@media (max-width: 716px){
+			top: 50%;
+			right: -50%;
+		}
 	}
 
-	//RESPOSIVE
+	//RESPOSIVE row-social
 	@media (max-width: 716px){
 		flex-direction: row;
 		width: 261px;
 		margin: 0 auto;
+		height: auto;
+		align-items: center;
 	}
 }
 
