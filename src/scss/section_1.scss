@@ -41,6 +41,13 @@
 			height: 1px;
 			width: 80px;
 		}
+
+		//RESPOSIVE after & before
+		@media (max-width: 620px){
+			height: 1px;
+			width: 40px;
+		}
+
 	}
 
 	//row-social
@@ -53,6 +60,12 @@
 			bottom: 50%;
 			left: -50%;
 		}
+
+		//RESPOSIVE before
+		@media (max-width: 620px){
+			bottom: 50%;
+			left: -45%;
+		}
 	}
 	//row-social
 	&::after {
@@ -64,6 +77,12 @@
 			top: 50%;
 			right: -50%;
 		}
+
+		//RESPOSIVE after
+		@media (max-width: 620px){
+			top: 50%;
+			right: -45%;
+		}
 	}
 
 	//RESPOSIVE row-social
@@ -73,6 +92,9 @@
 		margin: 0 auto;
 		height: auto;
 		align-items: center;
+	}
+	@media (max-width: 620px){
+		width: 151px;
 	}
 }
 
@@ -170,26 +192,44 @@
 
 //Icons
 .insta {
-	background: url('@img/svg/insta.svg') center center no-repeat;
+	background: url('@img/svg/insta.svg') center center/ contain no-repeat;
+	// background-size: cover;
 	width: 30px;
 	height: 30px;
 	display: block;
+	//RESPONSIVE 
+	@media (max-width: 620px){
+		width: 20px;
+		height: 20px;
+	}
 }
 .vk {
-	background: url('@img/svg/vk.svg') center center no-repeat;
+	background: url('@img/svg/vk.svg')   center center/ contain no-repeat;
 	width: 33px;
 	height: 19px;
 	display: block;
+	@media (max-width: 620px){
+		width: 20px;
+		height: 12px;
+	}
 }
 .telegram {
-	background: url('@img/svg/telegram.svg') center center no-repeat;
+	background: url('@img/svg/telegram.svg')  center center/ contain no-repeat;
 	width: 28px;
 	height: 23px;
 	display: block;
+	@media (max-width: 620px){
+		width: 17px;
+		height: 14px;
+	}
 }
 .whatsup {
-	background: url('@img/svg/whatsup.svg') center center no-repeat;
+	background: url('@img/svg/whatsup.svg')  center center/ contain no-repeat;
 	width: 33px;
 	height: 33px;
 	display: block;
+	@media (max-width: 620px){
+		width: 20px;
+		height: 20px;
+	}
 }
