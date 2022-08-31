@@ -7,6 +7,10 @@
 	box-sizing: border-box;
 }
 
+body {
+overflow-x: hidden;
+}
+
 ul,
 ol,
 li {
@@ -15,6 +19,76 @@ li {
 
 a {
 	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Cormorant';
+	font-size: 80px;
+	font-weight: 700;
+	font-size: 80px;
+	line-height: 1.32em;
+	color: #fff;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+h2 {
+	font-size: 25px;
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 1.42em;
+	color: #fff;
+}
+
+.btn {
+	font-family: 'Montserrat';
+	color: #fff;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 1.25em;
+	margin: 0 auto;
+	display: block;
+	width: 251px;
+	position: relative;
+	display: block;
+	z-index: 5;
+	@media (max-width: 620px){
+		font-size: 13px;
+		width: 195px;
+	}
+
+	&:hover {
+		color: #8C7870
+	}
+	
+	&::before {
+		z-index: 3;
+		position: absolute;
+		content: '';
+		background: url('@img/svg/btn-line.svg') center center no-repeat;
+		top: 50%;
+		left: 50%;
+		margin: -90px 0px -167px -167px;
+		width: 335px;
+		height: 180px;
+		@media (max-width: 620px){
+			background: url('@img/svg/btn-line_mobile.svg') center center no-repeat;
+			margin: -45px 0px -167px -138px;
+			width: 263px;
+			height: 93px;
+		}
+
+	}
+
+	&:active::before {
+		background: url('@img/svg/btn-line_active.svg') center center no-repeat;
+		//RESPONSIVE 
+		@media (max-width: 620px){
+			background: url('@img/svg/btn-line_active_mobile.svg') center center no-repeat;
+		}
+	}
 }
 
 .container {
