@@ -15,6 +15,10 @@
 	@media (max-width: 716px){
 		padding: 162px 0px 81px 0px;
 	}
+
+	
+
+	
 }
 
 .row-social{
@@ -90,11 +94,21 @@
 		
 	}
 
-	& > h2 {
-		margin: 0px 0px 91px 0px;
-		
+	& > h1 {
+		//RESPOSIVE offer-title H1	
+		@media (max-width: 620px){
+			font-size: 60px;
+		}
 	}
 
+	& > h2 {
+		margin: 0px 0px 91px 0px;
+		//RESPOSIVE offer-title H2	
+		@media (max-width: 620px){
+			font-size: 20px;
+		}
+		
+	}
 }
 
 .container_section-subtitle {
