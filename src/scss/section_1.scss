@@ -1,6 +1,6 @@
 .section-title {
 	padding: 280px 0px 279px 0px;
-	background: rgb(71, 68, 68);
+	background: rgb(120, 115, 115);
 	
 }
 
@@ -30,6 +30,25 @@
 		left: 50%;
 	}
 }
+
+.row-offer {
+	flex: 1 1 auto;
+}
+
+.offer-title {
+	margin: 0 auto;
+	& > h1, h2 {
+		text-align: center;
+	}
+
+	& > h2 {
+		margin: 0px 0px 91px 0px;
+		
+	}
+
+}
+
+
 .section-subtitle {
 	background: #000;
 	color: #fff;
