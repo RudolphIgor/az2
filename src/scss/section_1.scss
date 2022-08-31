@@ -10,6 +10,11 @@
 .section-title {
 	padding: 280px 0px 279px 0px;
 	background: rgb(120, 115, 115);
+
+	//RESPOSIVE section-title	
+	@media (max-width: 716px){
+		padding: 162px 0px 81px 0px;
+	}
 }
 
 .row-social{
@@ -70,6 +75,12 @@
 .row-offer {
 	flex: 1 1 auto;
 	flex-wrap: nowrap;
+
+	//RESPONSIVE row-offer
+	@media (max-width: 716px){
+		margin: 0px 0px 150px 0px;
+		
+	}	
 }
 
 .offer-title {
