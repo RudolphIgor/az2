@@ -53,6 +53,7 @@ h2 {
 	width: 251px;
 	position: relative;
 	display: block;
+	z-index: 5;
 	@media (max-width: 620px){
 		font-size: 13px;
 		width: 195px;
@@ -63,6 +64,7 @@ h2 {
 	}
 	
 	&::before {
+		z-index: 3;
 		position: absolute;
 		content: '';
 		background: url('@img/svg/btn-line.svg') center center no-repeat;
