@@ -24,7 +24,11 @@
 			height: 1px;
 			background: #000;
 
-			//RESPONSIVE 
+			//RESPONSIVE
+			
+			@media (max-width: 1400px){
+				width: 130px
+			}
 			@media (max-width: 1200px){
 				width: 120px
 			}
@@ -46,12 +50,13 @@
 
 			//RESPONSIVE 
 			//RESPONSIVE 
-			@media (max-width: 1200px){
+			//RESPONSIVE 
+			@media (max-width: 1600px){
 				left: 30%;
 			}
 
 			@media (max-width: 992px){
-				left: 20%;
+				left: 18%;
 			}
 
 			@media (max-width: 576px){
@@ -64,12 +69,15 @@
 			top: 50%;
 			right: 34%;
 
-			@media (max-width: 1200px){
+			@media (max-width: 1600px){
+				right: 30%;
+			}
+			@media (max-width: 1400px){
 				right: 30%;
 			}
 
 			@media (max-width: 992px){
-				right: 20%;
+				right: 18%;
 			}
 
 			@media (max-width: 576px){
@@ -205,7 +213,7 @@
 }
 .container {
 
-	&_section {
+	&_section_about {
 		display: flex;
 		flex-direction: column;
 	}
