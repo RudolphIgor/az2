@@ -25,6 +25,11 @@
 			background: #000;
 
 			//RESPONSIVE 
+			@media (max-width: 1200px){
+				width: 120px
+			}
+
+			//RESPONSIVE 
 			@media (max-width: 992px){
 				width: 115px
 			}
@@ -40,6 +45,11 @@
 			left: 34%;
 
 			//RESPONSIVE 
+			//RESPONSIVE 
+			@media (max-width: 1200px){
+				left: 30%;
+			}
+
 			@media (max-width: 992px){
 				left: 20%;
 			}
@@ -53,6 +63,10 @@
 			margin-right: -81px;
 			top: 50%;
 			right: 34%;
+
+			@media (max-width: 1200px){
+				right: 30%;
+			}
 
 			@media (max-width: 992px){
 				right: 20%;
