@@ -20,7 +20,7 @@
 
 	&__card {
 		display: flex;
-		flex: 0 0 33.3%;
+		flex: 1 0 25%;
 		position: relative;
 		z-index: -1;
 		justify-content: center;
@@ -29,17 +29,17 @@
 		
 		
 		&-first {
-			background: url('@img/svg/price-card__first.svg') center center/auto 98% no-repeat;
+			background: url('@img/svg/price-card__first.svg') center center/contain no-repeat;
 			margin: 0px 15px 0px 0px;
 		}
 
 		&-middle {
-			background: url('@img/svg/price-card__middle.svg') center center/auto 98% no-repeat;
+			background: url('@img/svg/price-card__middle.svg') center center/contain no-repeat;
 			margin: 0px 21px 0px 0px;
 		}
 
 		&-last {
-			background: url('@img/svg/price-card__first.svg') center center/auto 98% no-repeat;
+			background: url('@img/svg/price-card__first.svg') center center/contain no-repeat;
 			margin: 0px 0px 0px 0px;
 		}
 		
