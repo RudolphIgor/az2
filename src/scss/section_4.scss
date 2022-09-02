@@ -20,41 +20,31 @@
 
 	&__card {
 		display: flex;
-		flex: 1 0 25%;
+		flex: 0 1 27.5vw;
 		position: relative;
 		z-index: -1;
 		justify-content: center;
-		padding: 60px 0px 0px 0px;
+		align-items: center;
+		// padding: 60px 0px 0px 0px;
+		padding: 2.5vw 0px 0px 0px;
+		
 		
 		
 		
 		&-first {
-			background: url('@img/svg/price-card__first.svg') center center/contain no-repeat;
-			margin: 0px 15px 0px 0px;
+			background: url('@img/svg/price-card__first.svg') 0 0/contain no-repeat;
+			// margin: 0px 15px 0px 0px;
 		}
 
 		&-middle {
-			background: url('@img/svg/price-card__middle.svg') center center/contain no-repeat;
-			margin: 0px 21px 0px 0px;
+			background: url('@img/svg/price-card__middle.svg') 0 0/contain no-repeat;
+			// margin: 0px 21px 0px 0px;
 		}
 
 		&-last {
-			background: url('@img/svg/price-card__first.svg') center center/contain no-repeat;
-			margin: 0px 0px 0px 0px;
+			background: url('@img/svg/price-card__first.svg') 0 0/contain no-repeat;
+			// margin: 0px 0px 0px 0px;
 		}
-		
-		
-
-		// &::after {
-		// 	z-index: -1;
-		// 	position: absolute;
-		// 	content: '';
-		// 	background: url('@img/svg/price-card.svg') center center/ 100% 100% no-repeat;
-		// 	top: 0;
-		// 	left: 0;
-		// 	width: 100%;
-		// 	height: 100%;
-		// }
 	}
 }
 
@@ -71,49 +61,56 @@
 
 .card-title {
 	font-family: Cormorant;
-	font-size: 35px;
-	line-height: 1em;
+	// font-size: 35px;
+	font-size: 1.825vw;
+	// line-height: 1em;
 	color: #4A3830;
 	margin: 0px 0px 40px 0px;
-	max-width: 251px;
+	// max-width: 251px;
+	width: 13.075vw;
 	text-align: center;
-	margin: 0px auto 52px auto;
+	margin: 0px auto 2.085vw auto;
 
 	&__midle {
-		max-width: 324px;
+		// max-width: 330px;
+		width: 17.2vw;
 	}
 
 	&__last {
-		max-width: 325px;
+		// max-width: 325px;
+		width: 16.928vw;
 	}
 }
 .card-summ {
 	display: block;
 	font-family: Montserrat;
-	font-size: 25px;
-	line-height: 1.32em;
-	list-style: 0.0.6em;
+	// font-size: 25px;
+	font-size: 1.305vw;
+	letter-spacing: 0.06em;
+	// line-height: 1.32em;
 	font-weight: 500;
-	margin: 0px 0px 40px 0px;
+	margin: 0px 0px 2.1vw 0px;
+
 	
 }
 .card-paragraphs {
 	text-align: center;
 	font-family: Montserrat;
-	font-size: 17px;
+	font-size: 0.89vw;
 	font-weight: 400;
-	line-height: 1.32em;
+	// line-height: 1.32em;
 	letter-spacing: 0.06em;
-	margin: 0px 0px 60px 0px;
-	
+	margin: 0px auto 3.15vw auto;
+
 	& > p {
-		margin: 0px 0px 30px 0px;
+		margin: 0px 0px 1.563vw 0px;
 		position: relative;
 		&::after {
 			position: absolute;
 			content: '';
-			margin-left: -162.5px;
-			width: 325px;
+			// margin-left: -162.5px;
+			margin-left: -8.5vw;
+			width: 17.5vw;
 			height: 1px;
 			left: 50%;
 			bottom: -15px;
@@ -130,13 +127,16 @@
 }
 
 .card-part {
-	max-width: 326px;
+	// max-width: 326px;
+	width: 16.928vw;
 	position: relative;
 		&::after {
 			position: absolute;
 			content: '';
-			margin-left: -162.5px;
-			width: 325px;
+			// margin-left: -162.5px;
+			margin-left: -8.45vw;
+			// width: 325px;
+			width: 16.8vw;
 			height: 1px;
 			left: 50%;
 			bottom: -40px;
@@ -152,27 +152,29 @@
 		}
 	
 	& > .card-summ__first {
-		margin: 0px 0px 80px 0px;
+		margin: 0px 0px 4.169vw 0px;
 	}
 
 	& > .card-summ__last {
-		margin: 0px 0px 18px 0px;
+		margin: 0px 0px 0.942vw 0px;
 	}
 
 	& > h4 {
 		font-family: Montserrat;
-		font-size: 17px;
-		line-height: 1.32em;
+		// font-size: 17px;
+		font-size: 0.886vw;
+		// line-height: 1.32em;
 		letter-spacing: 0.06em;
-		margin: 0px 0px 18px 0px;
+		margin: 0px 0px 0.942vw 0px;
 	}
 
 	& > p {
 		font-family: Montserrat;
-		font-size: 17px;
-		line-height: 1.32em;
+		// font-size: 17px;
+		font-size: 0.886vw;
+		// line-height: 1.32em;
 		letter-spacing: 0.06em;
-		margin: 0px 0px 18px 0px;
+		margin: 0px 0px 0.942vw 0px;
 	}
 }
 .note {
