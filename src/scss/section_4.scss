@@ -11,15 +11,37 @@
 .price {
 
 	&__wrapper {
+		display: flex;
+		justify-content:space-between;
+		z-index: 0;
 	}
 
 	&__card {
+		display: flex;
+		flex: 0 0 33.3%;
+		position: relative;
+		z-index: -1;
+		justify-content: center;
+		// padding: 60px 57px 0px 57px;
+		
+
+		// &::after {
+		// 	z-index: -1;
+		// 	position: absolute;
+		// 	content: '';
+		// 	background: url('@img/svg/price-card.svg') center center/ 100% 100% no-repeat;
+		// 	top: 0;
+		// 	left: 0;
+		// 	width: 100%;
+		// 	height: 100%;
+		// }
 	}
 }
 
 
 .card-content {
-
+	display: block;
+	text-align: center;
 	&__type1 {
 	}
 
@@ -28,12 +50,111 @@
 }
 
 .card-title {
+	font-family: Cormorant;
+	font-size: 35px;
+	line-height: 1em;
+	color: #4A3830;
+	margin: 0px 0px 40px 0px;
+	max-width: 251px;
+	text-align: center;
+	margin: 0px auto 52px auto;
+
+	&__midle {
+		max-width: 324px;
+	}
+
+	&__last {
+		max-width: 325px;
+	}
 }
 .card-summ {
+	display: block;
+	font-family: Montserrat;
+	font-size: 25px;
+	line-height: 1.32em;
+	list-style: 0.0.6em;
+	font-weight: 500;
+	margin: 0px 0px 40px 0px;
+	
 }
 .card-paragraphs {
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 1.32em;
+	letter-spacing: 0.06em;
+	margin: 0px 0px 60px 0px;
+	
+	& > p {
+		margin: 0px 0px 30px 0px;
+		position: relative;
+		&::after {
+			position: absolute;
+			content: '';
+			margin-left: -162.5px;
+			width: 325px;
+			height: 1px;
+			left: 50%;
+			bottom: -15px;
+			background: #000;
+		}
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+			&::after {
+				display: none;
+			}
+			
+		}
+	}
 }
+
 .card-part {
+	max-width: 326px;
+	position: relative;
+		&::after {
+			position: absolute;
+			content: '';
+			margin-left: -162.5px;
+			width: 325px;
+			height: 1px;
+			left: 50%;
+			bottom: -40px;
+			background: #000;
+		}
+
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+			&::after {
+				display: none;
+			}
+			
+		}
+	
+	& > .card-summ__first {
+		margin: 0px 0px 80px 0px;
+	}
+
+	& > .card-summ__last {
+		margin: 0px 0px 18px 0px;
+	}
+
+	& > h4 {
+		font-family: Montserrat;
+		font-size: 17px;
+		line-height: 1.32em;
+		letter-spacing: 0.06em;
+		margin: 0px 0px 18px 0px;
+	}
+
+	& > p {
+		font-family: Montserrat;
+		font-size: 17px;
+		line-height: 1.32em;
+		letter-spacing: 0.06em;
+		margin: 0px 0px 18px 0px;
+	}
 }
 .note {
+	margin: 0px 0px 60px 0px;
 }

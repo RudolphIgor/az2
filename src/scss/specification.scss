@@ -21,6 +21,10 @@ a {
 	text-decoration: none;
 }
 
+h1, h2, h3, h4, h5 {
+	margin: 0;
+}
+
 h1 {
 	font-family: 'Cormorant';
 	font-size: 80px;
@@ -40,6 +44,10 @@ h2 {
 	font-size: 25px;
 	line-height: 1.42em;
 	color: #fff;
+}
+
+h3 {
+	margin: 0;
 }
 
 .btn {
