@@ -26,7 +26,7 @@
 		justify-content: center;
 		align-items: center;
 		// padding: 60px 0px 0px 0px;
-		padding: 3.15vw 0px 0px 0px;
+		padding: 2.5vw 0px 0px 0px;
 		
 		
 		
@@ -63,19 +63,22 @@
 	font-family: Cormorant;
 	// font-size: 35px;
 	font-size: 1.825vw;
-	line-height: 1em;
+	// line-height: 1em;
 	color: #4A3830;
 	margin: 0px 0px 40px 0px;
-	max-width: 251px;
+	// max-width: 251px;
+	width: 13.075vw;
 	text-align: center;
 	margin: 0px auto 2.085vw auto;
 
 	&__midle {
-		max-width: 324px;
+		// max-width: 330px;
+		width: 17.2vw;
 	}
 
 	&__last {
-		max-width: 325px;
+		// max-width: 325px;
+		width: 16.928vw;
 	}
 }
 .card-summ {
@@ -83,8 +86,8 @@
 	font-family: Montserrat;
 	// font-size: 25px;
 	font-size: 1.305vw;
-	line-height: 1.32em;
-	list-style: 0.0.6em;
+	letter-spacing: 0.06em;
+	// line-height: 1.32em;
 	font-weight: 500;
 	margin: 0px 0px 2.1vw 0px;
 
@@ -95,7 +98,7 @@
 	font-family: Montserrat;
 	font-size: 0.89vw;
 	font-weight: 400;
-	line-height: 1.32em;
+	// line-height: 1.32em;
 	letter-spacing: 0.06em;
 	margin: 0px auto 3.15vw auto;
 
@@ -124,13 +127,16 @@
 }
 
 .card-part {
-	max-width: 326px;
+	// max-width: 326px;
+	width: 16.928vw;
 	position: relative;
 		&::after {
 			position: absolute;
 			content: '';
-			margin-left: -162.5px;
-			width: 325px;
+			// margin-left: -162.5px;
+			margin-left: -8.45vw;
+			// width: 325px;
+			width: 16.8vw;
 			height: 1px;
 			left: 50%;
 			bottom: -40px;
@@ -146,27 +152,29 @@
 		}
 	
 	& > .card-summ__first {
-		margin: 0px 0px 80px 0px;
+		margin: 0px 0px 4.169vw 0px;
 	}
 
 	& > .card-summ__last {
-		margin: 0px 0px 18px 0px;
+		margin: 0px 0px 0.942vw 0px;
 	}
 
 	& > h4 {
 		font-family: Montserrat;
-		font-size: 17px;
-		line-height: 1.32em;
+		// font-size: 17px;
+		font-size: 0.886vw;
+		// line-height: 1.32em;
 		letter-spacing: 0.06em;
-		margin: 0px 0px 18px 0px;
+		margin: 0px 0px 0.942vw 0px;
 	}
 
 	& > p {
 		font-family: Montserrat;
-		font-size: 17px;
-		line-height: 1.32em;
+		// font-size: 17px;
+		font-size: 0.886vw;
+		// line-height: 1.32em;
 		letter-spacing: 0.06em;
-		margin: 0px 0px 18px 0px;
+		margin: 0px 0px 0.942vw 0px;
 	}
 }
 .note {
