@@ -52,51 +52,34 @@ h3 {
 
 .btn {
 	font-family: 'Montserrat';
-	color: #fff;
+	background: url('@img/svg/btn__about-line.svg') center center/contain no-repeat;
+	display: flex;
+	color: #4A3830;
 	font-weight: 700;
 	font-size: 17px;
 	line-height: 1.25em;
 	margin: 0 auto;
-	display: block;
-	width: 251px;
-	position: relative;
-	display: block;
-	z-index: 5;
-	@media (max-width: 620px){
-		font-size: 13px;
-		width: 195px;
-	}
+	width: 336px;
+	height: 181px;
+	align-items: center;
+	justify-content: center;
+
 
 	&:hover {
 		color: #8C7870
 	}
+
+	&:active {
+		background: url('@img/svg/btn-line__about_active.svg') center center/cover no-repeat;
+	}
+
+	//RESPONSIVE 
+	@media (max-width: 576px){
+		width: 236px;
+		height: 92px;
+		font-size: 13px;
+	}
 	
-	&::before {
-		z-index: 3;
-		position: absolute;
-		content: '';
-		background: url('@img/svg/btn-line.svg') center center no-repeat;
-		top: 50%;
-		left: 50%;
-		margin: -90px 0px -167px -167px;
-		width: 335px;
-		height: 180px;
-		@media (max-width: 620px){
-			background: url('@img/svg/btn-line_mobile.svg') center center no-repeat;
-			margin: -45px 0px -167px -138px;
-			width: 263px;
-			height: 93px;
-		}
-
-	}
-
-	&:active::before {
-		background: url('@img/svg/btn-line_active.svg') center center no-repeat;
-		//RESPONSIVE 
-		@media (max-width: 620px){
-			background: url('@img/svg/btn-line_active_mobile.svg') center center no-repeat;
-		}
-	}
 }
 
 .container {
