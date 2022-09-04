@@ -1,0 +1,30 @@
+.page__section_4 {
+	padding: 120px 0px 215px 0px;
+	
+}
+.containter-section__price {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+.price {
+
+	&__wrapper {
+		background: rgb(216, 3, 205);
+		max-width: 100%;
+		display: flex;
+		justify-content: space-between;
+		//RESPONSIVE 
+		@media (max-width: 992px){
+			flex-direction: column;
+		}
+	}
+
+	&__row {
+		background: rgb(236, 253, 0);
+		flex: 0 0 32%;
+	}
+}
+

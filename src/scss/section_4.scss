@@ -12,6 +12,8 @@
 
 	&__wrapper {
 		display: flex;
+		// flex-wrap: nowrap;
+		// flex-direction: row;
 		justify-content:space-between;
 		z-index: 0;
 		margin: 0px 0px 88px 0px;
@@ -21,6 +23,7 @@
 			flex-direction: column;
 			text-align: center;
 			justify-content: center;
+			margin: 0px 0px 3.3vw 0px;
 		}
 	}
 
@@ -30,13 +33,14 @@
 		position: relative;
 		z-index: -1;
 		justify-content: center;
-		align-items: center;
+		// align-items: center;
 		padding: 2.5vw 0px 0px 0px;
 		
 		//RESPONSIVE 
 		@media (max-width: 1200px){
 			margin: 0px 0px 16px 0px;
 			padding: 5vw 0px 0px 0px;
+			flex: 1 1 auto;
 		}
 
 		&-first {
@@ -82,7 +86,7 @@
 .card-title {
 	font-family: Cormorant;
 	// font-size: 35px;
-	// font-size: 1.825vw;
+	font-size: 1.825vw;
 	// line-height: 1em;
 	color: #4A3830;
 	margin: 0px 0px 40px 0px;
@@ -102,7 +106,8 @@
 
 		//RESPONSIVE 
 		@media (max-width: 1200px){
-			width: 27vw
+			width: 27vw;
+			margin: 0px auto 3.3vw auto;
 		}
 	}
 
@@ -163,13 +168,15 @@
 			width: 17.5vw;
 			height: 1px;
 			left: 50%;
-			bottom: -15px;
+			// bottom: -15px;
+			bottom: -0.781vw;
 			background: #000;
 
 			//RESPONSIVE 
 			@media (max-width: 1200px){
 				width: 27vw;
 				margin-left: -13.6vw;
+				bottom: -1.25vw;
 			}
 		}
 		&:last-child {
@@ -190,35 +197,38 @@
 	@media (max-width: 1200px){
 		width: 27.1vw;
 	}
+
+	&::after {
+		position: absolute;
+		content: '';
+		margin-left: -8.45vw;
+		width: 16.8vw;
+		height: 1px;
+		left: 50%;
+		// bottom: -40px;
+		bottom: -2.08vw;
+		background: #000;
+
+		//RESPONSIVE 
+		@media (max-width: 1200px){
+			width: 27.1vw;
+			margin-left: -13.5vw;
+			bottom: -3.33vw;
+		}
+	}
+
+	&:last-child {
+		margin: 0px 0px 3.5vw 0px;
+
+		//RESPONSIVE 
+		@media (max-width: 1200px){
+			margin: 0px 0px 3.5vw 0px;
+		}
 		&::after {
-			position: absolute;
-			content: '';
-			margin-left: -8.45vw;
-			width: 16.8vw;
-			height: 1px;
-			left: 50%;
-			bottom: -40px;
-			background: #000;
-
-			//RESPONSIVE 
-			@media (max-width: 1200px){
-				width: 27.1vw;
-				margin-left: -13.5vw;
-			}
+			display: none;
 		}
-
-		&:last-child {
-			margin: 0px 0px 0px 0px;
-
-			//RESPONSIVE 
-			@media (max-width: 1200px){
-				margin: 0px 0px 0px 0px;
-			}
-			&::after {
-				display: none;
-			}
-			
-		}
+		
+	}
 	
 	& > .card-summ__first {
 		margin: 0px 0px 4.169vw 0px;
@@ -263,7 +273,7 @@
 		//RESPONSIVE 
 		@media (max-width: 1200px){
 			font-size: 1.4vw;
-			margin: 0px 0px 1.5vw 0px;
+			margin: 0px 0px 3.5vw 0px;
 		}
 	}
 }
