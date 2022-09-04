@@ -5,7 +5,7 @@
 
 	//RESPONSIVE 
 	@media (max-width: 1326px){
-		@include adaptive-value("padding-top", 82, 70, 768);
+	@include adaptive-value("padding-top", 82, 70, 768);
 	@include adaptive-value("padding-bottom", 158, 70, 768);
 	}
 }
