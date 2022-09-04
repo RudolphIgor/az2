@@ -1,6 +1,13 @@
 .page__section_4 {
 	padding: 120px 0px 215px 0px;
-	
+	@include adaptive-value("padding-top", 82, 70, 1920);
+	@include adaptive-value("padding-bottom", 158, 70, 1920);
+
+	//RESPONSIVE 
+	@media (max-width: 1326px){
+		@include adaptive-value("padding-top", 82, 70, 768);
+	@include adaptive-value("padding-bottom", 158, 70, 768);
+	}
 }
 .containter-section__price {
 	display: flex;
@@ -9,269 +16,206 @@
 }
 
 .price {
-
 	&__wrapper {
+		// background: rgb(216, 3, 205);
+		max-width: 100%;
 		display: flex;
-		justify-content:space-between;
-		z-index: 0;
-		margin: 0px 0px 88px 0px;
-	
-		//RESPONSIVE 
-		@media (max-width: 1200px){
+		justify-content: space-between;
+		@include adaptive-value("margin-bottom", 51, 40, 1920);
+		//RESPONSIVE
+		@media (max-width: 1326px) {
 			flex-direction: column;
-			text-align: center;
-			justify-content: center;
+			@include adaptive-value("margin-bottom", 51, 40, 768);
+		}
+	}
+}
+
+.card-last > h4 {
+	@include adaptive-value("width", 330, 184, 1920);
+
+	@media (max-width: 1326px) {
+		@include adaptive-value("width", 330, 184, 768);
+	}
+}
+.card {
+	background: rgb(236, 253, 0);
+	flex: 1 1 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	@include adaptive-value("margin-bottom", 16, 20, 1920);
+
+	background: url("@img/svg/price-card__first.svg") center center / contain no-repeat;
+
+	//RESPONSIVE
+	@media (max-width: 400px) {
+		background: url("@img/svg/price-card__first.svg") center center / 100% 100% no-repeat;
+	}
+
+	&__title {
+		font-family: Cormorant;
+		text-align: center;
+		@include adaptive-value("width", 251, 144, 1920);
+		@include adaptive-value("font-size", 35, 20, 1920);
+		@include adaptive-value("margin-top", 60, 20, 1920);
+		@include adaptive-value("margin-bottom", 40, 20, 1920);
+		color: #4a3830;
+
+		//RESPONSIVE
+		@media (max-width: 1326px) {
+			@include adaptive-value("font-size", 35, 20, 768);
+			@include adaptive-value("width", 251, 144, 768);
+			@include adaptive-value("margin-top", 60, 20, 768);
+			@include adaptive-value("margin-bottom", 40, 20, 768);
 		}
 	}
 
-	&__card {
-		display: flex;
-		flex: 0 1 27.5vw;
-		position: relative;
-		z-index: -1;
-		justify-content: center;
-		align-items: center;
-		padding: 2.5vw 0px 0px 0px;
-		
-		//RESPONSIVE 
-		@media (max-width: 1200px){
-			margin: 0px 0px 16px 0px;
-			padding: 5vw 0px 0px 0px;
+	&__summ {
+		font-family: Montserrat;
+		font-weight: 500;
+		letter-spacing: 0.06em;
+		@include adaptive-value("font-size", 25, 15, 1920);
+		@include adaptive-value("margin-bottom", 40, 20, 1920);
+
+		//RESPONSIVE
+		@media (max-width: 1326px) {
+			@include adaptive-value("font-size", 25, 15, 768);
+			@include adaptive-value("margin-bottom", 40, 20, 768);
+		}
+	}
+
+	&__paragraphs {
+		text-align: center;
+		font-family: Montserrat;
+		letter-spacing: 0.06em;
+		@include adaptive-value("margin-bottom", 60, 20, 1920);
+
+		//RESPONSIVE
+		@media (max-width: 1326px) {
+			@include adaptive-value("margin-bottom", 61, 41, 768);
 		}
 
-		&-first {
-			background: url('@img/svg/price-card__first.svg') center center/contain no-repeat;
+		& > p {
+			@include adaptive-value("margin-bottom", 15, 10, 1920);
+			@include adaptive-value("font-size", 17, 11, 1920);
 
-			//RESPONSIVE 
-			@media (max-width: 1200px){
-				background: url('@img/svg/price-card__first.svg') center center/contain no-repeat;
+			//RESPONSIVE
+			@media (max-width: 1326px) {
+				@include adaptive-value("margin-bottom", 15, 10, 768);
+				@include adaptive-value("font-size", 17, 11, 768);
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			//RESPONSIVE
+			@media (max-width: 400px) {
+				letter-spacing: 0em;
 			}
 		}
 
-		&-middle {
-			background: url('@img/svg/price-card__middle.svg') center center/contain no-repeat;
-
-			//RESPONSIVE 
-			@media (max-width: 1200px){
-				background: url('@img/svg/price-card__middle.svg') center center/contain no-repeat;
-			}
-		}
-
-		&-last {
-			background: url('@img/svg/price-card__first.svg') center center/contain no-repeat;
-
-			//RESPONSIVE 
-			@media (max-width: 1200px){
-				background: url('@img/svg/price-card__first.svg') center center/contain no-repeat;
-			}
-		}
-	}
-}
-
-
-.card-content {
-	display: block;
-	text-align: center;
-	&__type1 {
-	}
-
-	&__type2 {
-	}
-}
-
-.card-title {
-	font-family: Cormorant;
-	// font-size: 35px;
-	// font-size: 1.825vw;
-	// line-height: 1em;
-	color: #4A3830;
-	margin: 0px 0px 40px 0px;
-	// max-width: 251px;
-	width: 13.075vw;
-	text-align: center;
-	margin: 0px auto 2.085vw auto;
-
-	//RESPONSIVE 
-	@media (max-width: 1200px){
-		font-size: 2.916vw;
-		width: 20vw;
-	}
-	&__midle {
-		// max-width: 330px;
-		width: 17.2vw;
-
-		//RESPONSIVE 
-		@media (max-width: 1200px){
-			width: 27vw
-		}
-	}
-
-	&__last {
-		// max-width: 325px;
-		width: 16.928vw;
-
-		//RESPONSIVE 
-		@media (max-width: 1200px){
-			width: 23vw;
-		}
-	}
-}
-.card-summ {
-	display: block;
-	font-family: Montserrat;
-	// font-size: 25px;
-	font-size: 1.305vw;
-	letter-spacing: 0.06em;
-	// line-height: 1.32em;
-	font-weight: 500;
-	margin: 0px 0px 2.1vw 0px;
-
-	//RESPONSIVE 
-	@media (max-width: 1200px){
-		font-size: 2.08vw;
-		margin: 0px 0px 3.3vw 0px;
-	}
-
-	
-}
-.card-paragraphs {
-	text-align: center;
-	font-family: Montserrat;
-	font-size: 0.89vw;
-	font-weight: 400;
-	letter-spacing: 0.06em;
-	margin: 0px auto 3.15vw auto;
-
-	//RESPONSIVE 
-	@media (max-width: 1200px){
-		font-size: 1.41vw;
-		margin: 0px auto 5vw auto;
-	}
-
-	& > p {
-		margin: 0px 0px 1.563vw 0px;
-		position: relative;
-		
-		//RESPONSIVE 
-		@media (max-width: 1200px){
-			margin: 0px 0px 2.5vw 0px;
-		}
-		&::after {
-			position: absolute;
-			content: '';
-			margin-left: -8.5vw;
-			width: 17.5vw;
+		& > span {
+			margin: 0 auto;
+			display: block;
 			height: 1px;
-			left: 50%;
-			bottom: -15px;
 			background: #000;
+			@include adaptive-value("width", 325, 200, 1920);
+			@include adaptive-value("font-size", 17, 11, 1920);
+			@include adaptive-value("margin-bottom", 15, 10, 1920);
 
-			//RESPONSIVE 
-			@media (max-width: 1200px){
-				width: 27vw;
-				margin-left: -13.6vw;
+			//RESPONSIVE
+			@media (max-width: 1326px) {
+				@include adaptive-value("margin-bottom", 15, 10, 768);
 			}
 		}
-		&:last-child {
-			margin: 0px 0px 0px 0px;
-			&::after {
-				display: none;
-			}
-			
+	}
+}
+
+//Middle card
+.card-middle {
+	background: url("@img/svg/price-card__middle.svg") center center/contain no-repeat;
+
+	@media (max-width: 400px) {
+		background: url("@img/svg/price-card__middle.svg") center center / 100% 100% no-repeat;
+	}
+
+	& > .card__title {
+		@include adaptive-value("width", 350, 95, 1920);
+
+		@media (max-width: 1326px) {
+			@include adaptive-value("width", 350, 95, 768);
 		}
 	}
 }
 
 .card-part {
-	width: 16.928vw;
-	position: relative;
+	// border: 1px solid red;
+	text-align: center;
+	@include adaptive-value("width", 325, 211, 1920);
+	@include adaptive-value("margin-bottom", 40, 20, 1920);
 
-	//RESPONSIVE 
-	@media (max-width: 1200px){
-		width: 27.1vw;
+	//RESPONSIVE
+	@media (max-width: 1326px) {
+		@include adaptive-value("width", 325, 211, 768);
+		@include adaptive-value("margin-bottom", 40, 20, 768);
 	}
-		&::after {
-			position: absolute;
-			content: '';
-			margin-left: -8.45vw;
-			width: 16.8vw;
-			height: 1px;
-			left: 50%;
-			bottom: -40px;
-			background: #000;
-
-			//RESPONSIVE 
-			@media (max-width: 1200px){
-				width: 27.1vw;
-				margin-left: -13.5vw;
-			}
-		}
-
-		&:last-child {
-			margin: 0px 0px 0px 0px;
-
-			//RESPONSIVE 
-			@media (max-width: 1200px){
-				margin: 0px 0px 0px 0px;
-			}
-			&::after {
-				display: none;
-			}
-			
-		}
-	
-	& > .card-summ__first {
-		margin: 0px 0px 4.169vw 0px;
-
-		//RESPONSIVE 
-		@media (max-width: 1200px){
-			margin: 0px 0px 6.6vw 0px;
-		}
-	}
-
-	& > .card-summ__last {
-		margin: 0px 0px 0.942vw 0px;
-
-		//RESPONSIVE 
-		@media (max-width: 1200px){
-			margin: 0px 0px 1.5vw 0px;
-		}
-	}
-
 	& > h4 {
 		font-family: Montserrat;
-		// font-size: 17px;
-		font-size: 0.886vw;
 		letter-spacing: 0.06em;
-		margin: 0px 0px 0.942vw 0px;
+		@include adaptive-value("font-size", 17, 15, 1920);
+		@include adaptive-value("margin-bottom", 18, 15, 1920);
 
-		//RESPONSIVE 
-		@media (max-width: 1200px){
-			font-size: 1.4vw;
-			margin: 0px 0px 1.5vw 0px;
+		//RESPONSIVE
+		@media (max-width: 1326px) {
+			@include adaptive-value("font-size", 17, 15, 768);
+			@include adaptive-value("margin-bottom", 18, 15, 768);
 		}
 	}
 
 	& > p {
 		font-family: Montserrat;
-		// font-size: 17px;
-		font-size: 0.886vw;
-		// line-height: 1.32em;
 		letter-spacing: 0.06em;
-		margin: 0px 0px 0.942vw 0px;
+		@include adaptive-value("font-size", 17, 11, 1920);
+		@include adaptive-value("margin-bottom", 18, 18, 1920);
 
-		//RESPONSIVE 
-		@media (max-width: 1200px){
-			font-size: 1.4vw;
-			margin: 0px 0px 1.5vw 0px;
+		//RESPONSIVE
+		@media (max-width: 1326px) {
+			@include adaptive-value("font-size", 17, 11, 768);
+			@include adaptive-value("margin-bottom", 18, 18, 768);
+		}
+	}
+
+	& > .note {
+		font-family: Montserrat;
+		@include adaptive-value("font-size", 17, 11, 1920);
+		@media (max-width: 1326px) {
+			@include adaptive-value("font-size", 17, 11, 768);
 		}
 	}
 }
-.note {
-	margin: 0px 0px 60px 0px;
 
-	//RESPONSIVE 
-	@media (max-width: 1200px){
-		margin: 0px 0px 60px 0px;
+.card-middle {
+	& > span {
+		margin: 0 auto;
+		display: block;
+		height: 1px;
+		background: #000;
+		@include adaptive-value("width", 325, 200, 1920);
+		@include adaptive-value("margin-bottom", 40, 20, 1920);
+
+		//RESPONSIVE
+		@media (max-width: 1326px) {
+			@include adaptive-value("margin-bottom", 40, 40, 768);
+		}
+	}
+}
+
+.card__summ-last {
+	display: block;
+	@include adaptive-value("margin-bottom", 18, 15, 1920);
+	@media (max-width: 1326px) {
+		@include adaptive-value("margin-bottom", 18, 15, 768);
 	}
 }
