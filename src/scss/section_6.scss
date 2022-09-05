@@ -25,6 +25,7 @@
 	
 	&__text {
 		width: 100%;
+		overflow: hidden;
 		// @include adaptive-value('width', 805, 565, 1920);
 		@media (max-width: 768px){
 			@include adaptive-value('width', 565, 268, 768);
