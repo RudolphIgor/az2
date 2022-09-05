@@ -12,30 +12,40 @@
 		
 	}
 	&__wrapper {
-		// margin: 0px 0px 120px 0px;
 		@include adaptive-value("margin-bottom", 120, 75, 768);
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		// height: 8x;
 
 		//RESPONSIVE 
+		@media (max-width: 1300px){
+			align-items: start;
+		}
+		//RESPONSIVE 
 		@media (max-width: 1200px){
+			align-items: center;
 			flex-direction: column;
 			margin: 0px 0px 177px 0px;
 			
 		}
 
 		//RESPONSIVE 
+		@media (max-width: 768px){
+			margin: 0px 0px 120px 0px;
+		}
 		@media (max-width: 576px){
 			margin: 0px 0px 112px 0px;
 		}
 	}
 
 	&__image {
-		flex: 0 0 42.39%;
-		padding: 0px 0px 0px 0px;
+		// flex: 0 0 42.39%;
+		flex: 0 1 auto;
+
+		// margin: 0px 101px 0px 0px;
+		@include adaptive-value("margin-right", 101, 1, 1920);
+
 		font-size: 0;
 
 		& > img {
@@ -45,6 +55,7 @@
 		}
 		
 		@media (max-width: 1200px){
+
 			margin: 0px 0px 40px 0px;
 			
 		}
@@ -55,6 +66,7 @@
 		// max-width: 833px;
 		@include adaptive-value("width", 888, 566, 1920);
 		flex: 0 0 51.39%;
+
 		& > span {
 			display: block;
 			font-family: Montserrat;
@@ -84,7 +96,13 @@
 			//RESPONSIVE 
 			@media (max-width: 1200px){
 				@include adaptive-value("font-size", 20, 15, 768);
+				// @include adaptive-value("width", 566, 272, 768);
 			}
+
+			//RESPONSIVE 
+			// @media (max-width: 768px){
+			// 	@include adaptive-value("width", 566, 272, 768);
+			// }
 			@media (max-width: 576px){
 				font-size: 15px;
 			}
@@ -94,6 +112,11 @@
 		//RESPONSIVE 
 		@media (max-width: 1200px){
 			@include adaptive-value("width", 888, 566, 1200);
+			
+		}
+		@media (max-width: 768px){
+			@include adaptive-value("width", 566, 272, 768);
+			
 		}
 		@media (max-width: 576px){
 			// max-width: 272px;
@@ -112,7 +135,9 @@
 		//RESPONSIVE 
 		@media (max-width: 1200px){
 			// @include adaptive-value("width", 566, 272, 1200);
+			width: 100%;
 		}
+		
 		@media (max-width: 576px){
 			@media (max-width: 576px){
 				margin: 0px 0px 74px 0px;
@@ -141,29 +166,9 @@
 
 
 .about__btn {
-	color: #4A3830;
-
-	& :hover {
-		color: #8C7870;
-	}
-
-	&::before {
-		background: url('@img/svg/btn__about-line.svg');
-	//RESPONSIVE	
-		@media (max-width: 620px){
-			background: url('@img/svg/btn__about-line_mobile.svg') center center no-repeat;
-		}
-		
-	}
-
-	&:active::before {
-		background: url('@img/svg/btn-line_active.svg') center center no-repeat;
-		
-		//RESPONSIVE 
-		@media (max-width: 620px){
-			background: url('@img/svg/btn-line__about_active_mobile.svg') center center no-repeat;
-		}
-	}
+	// @include adaptive-value("font-size", 17, 13, 1920);
+	// @include adaptive-value("width", 335, 180, 1920);
+	
 }
 .container {
 
