@@ -31,6 +31,8 @@
 			},
 			768: {
 				slidesPerView: 2,
+				centeredSlides: true,
+				slidesPerGroup: 1,
 				scrollbar: {
 					el: '.swiper-scrollbar',
 					dragSize: '142px',
