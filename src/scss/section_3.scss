@@ -1,19 +1,24 @@
 .about {
-	padding: 120px 0px 0px 0px;
+	@include adaptive-value("padding-top", 120, 75, 1920);
 	background: rgba(140, 120, 112, 0.1);
 	
 	//RESPONSIVE 
+	//RESPONSIVE 
+	@media (max-width: 1200px){
+		@include adaptive-value("padding-top", 120, 75, 768);
+	}
 	@media (max-width: 576px){
 		padding: 70px 0px 0px 0px;
+		
 	}
 	&__wrapper {
-		margin: 0px 0px 120px 0px;
-		
+		// margin: 0px 0px 120px 0px;
+		@include adaptive-value("margin-bottom", 120, 75, 768);
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		height: 8x;
+		// height: 8x;
 
 		//RESPONSIVE 
 		@media (max-width: 1200px){
@@ -47,24 +52,38 @@
 	}
 
 	&__text {
-		max-width: 833px;
-		// background: rgb(51, 81, 141);
+		// max-width: 833px;
+		@include adaptive-value("width", 888, 566, 1920);
 		flex: 0 0 51.39%;
 		& > span {
 			display: block;
 			font-family: Montserrat;
 			font-size: 20px;
+			@include adaptive-value("font-size", 20, 15, 1920);
 			line-height: 1.26em;
 			letter-spacing: 0.06em;
 			font-weight: 500;
-			max-width: 480px;
+			// max-width: 480px;
+			@include adaptive-value("width", 485, 272, 1920);
 			margin: 0px 0px 41px 0px;
+			@media (max-width: 1200px){
+				width: 602px;
+			}
+			@media (max-width: 768px){
+				@include adaptive-value("width", 602, 272, 768);
+			}
 
 			& > span {
 				display: none;
+				//RESPONSIVE 
 				@media (max-width: 576px){
 					display: inline;
 				}
+			}
+
+			//RESPONSIVE 
+			@media (max-width: 1200px){
+				@include adaptive-value("font-size", 20, 15, 768);
 			}
 			@media (max-width: 576px){
 				font-size: 15px;
@@ -74,10 +93,10 @@
 
 		//RESPONSIVE 
 		@media (max-width: 1200px){
-			max-width: 566px;
+			@include adaptive-value("width", 888, 566, 1200);
 		}
 		@media (max-width: 576px){
-			max-width: 272px;
+			// max-width: 272px;
 		}
 
 		@media (max-width: 576px){
@@ -86,9 +105,14 @@
 	}
 
 	&__block-text {
-		margin: 0px 0px 88px 0px;
-		
+		margin: 0px 0px 40px 0px;
+		@include adaptive-value("width", 833, 566, 1920);
 		//RESPONSIVE 
+
+		//RESPONSIVE 
+		@media (max-width: 1200px){
+			// @include adaptive-value("width", 566, 272, 1200);
+		}
 		@media (max-width: 576px){
 			@media (max-width: 576px){
 				margin: 0px 0px 74px 0px;
@@ -96,12 +120,16 @@
 		}
 		& > p {
 			font-family: Montserrat;
-			font-size: 17px;
+			@include adaptive-value("font-size", 17, 13, 1920);
 			font-weight: 400;
 			line-height: 1.32em;
 			letter-spacing: 0.06em;
 			margin: 0px 0px 20px 0px;
 
+			//RESPONSIVE 
+			@media (max-width: 1200px){
+				@include adaptive-value("font-size", 17, 13, 768);
+			}
 			@media (max-width: 576px){
 				font-size: 13px;
 			}
