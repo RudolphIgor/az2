@@ -1,3 +1,7 @@
 export function swipe () {
-	console.log('Hi i swiper');
+	const btn = document.querySelector('.btn_faq');
+	const content = document.querySelector('.content__text');
+	btn.addEventListener('click', () => {
+
+	})
 }
