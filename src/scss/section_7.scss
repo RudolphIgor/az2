@@ -6,6 +6,10 @@
 	@media (max-width: 1200px){
 		background: url('@img/svg//decor-line.svg') center 0 no-repeat;
 	}
+
+	@media (max-width: 576px){
+		background: url('@img/svg//decor-line.svg') center -30vw no-repeat;
+	}
 	
 	&__container {
 		display: block;
@@ -100,7 +104,19 @@
 
 	&__image {
 		& > img {
+			display: block;
 			width: 100%;
+
+			//RESPONSIVE 
+			@media (max-width: 576px){
+				display: none;
+			}
+			&:last-child {
+				display: none;
+				@media (max-width: 576px){
+					display: block;
+				}
+			}
 		}
 		
 	}
