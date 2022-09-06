@@ -58,6 +58,27 @@
 			
 		}
 	}
+
+	&__insta {
+		&:hover {
+			background: url('@img/svg/insta_hover_footer.svg')  center center/ contain no-repeat;
+		}
+	}
+	&__vk {
+		&:hover {
+			background: url('@img/svg/vk_hover_footer.svg')  center center/ contain no-repeat;
+		}
+	}
+	&__telegram {
+		&:hover {
+			background: url('@img/svg/telegram_hover_footer.svg')  center center/ contain no-repeat;
+		}
+	}
+	&__whatsup {
+		&:hover {
+			background: url('@img/svg/whatsup_hover_footer.svg')  center center/ contain no-repeat;
+		}
+	}
 }
 
 
@@ -107,6 +128,8 @@
 			
 		}
 	}
+
+	
 }
 
 .footer-social {
@@ -132,14 +155,7 @@
 		}
 	}
 }
-.insta {
-}
-.vk {
-}
-.telegram {
-}
-.whatsup {
-}
+
 
 
 .contacts {
