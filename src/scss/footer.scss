@@ -5,7 +5,7 @@
 	
 	&__decore {
 		height: 98px;
-		width: 2px;
+		width: 1px;
 		background: #fff;
 		display: block;
 	}
@@ -43,31 +43,41 @@
 }
 
 .footer-menu {
-
+	width: 374px;
 	&__list {
 		display: flex;
-		width: 333px;
+		width: 100%;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		text-align: left;
 	}
 
 	&__item {
-		
+		font-size: 17px;
+		margin: 0px 44px 17px 0px;
 		text-align: left;
+		width: 95px;
+		&:nth-child(n+4) {
+			margin: 0px 44px 0px 0px;
+		}
+		&:nth-child(3) {
+			margin: 0px 0px 0px 0px;
+		}
+		&:nth-child(6) {
+			margin: 0px 0px 0px 0px;
+		}
 		
 		
 	}
 
 	&__link {
 		color: #fff;
-		margin: 0px 44px 17px 0px;
+		// margin: 0px 44px 17px 0px;
 		&:nth-child(3){
-			margin: 0px 0px 17px 0px;
+			// margin: 0px 0px 17px 0px;
 			
 		}
 		&:nth-child(6){
-			margin: 0px 0px 17px 0px;
+			// margin: 0px 0px 17px 0px;
 			
 		}
 	}
