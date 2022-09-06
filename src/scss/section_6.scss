@@ -1,5 +1,5 @@
 .page__section_6 {
-
+	@include adaptive-value('padding-bottom', 200, 70, 1920)
 }
 
 .faq {
@@ -126,6 +126,56 @@
 		display: none;
 		//RESPONSIVE 
 		@media (max-width: 1260px){
+			display: block;
+		}
+	}
+}
+
+
+.btn {
+
+	&_faq {
+		float: left;
+		margin-left: 15%;
+		display: block;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			right: 3.7vw;
+			top: 50%;
+			margin-top: -10.125px;
+			background: url('@img/svg/arrow_down.svg') center center no-repeat;
+			display: block;
+			width: 16.25px;
+			height: 20.25px;
+			// z-index: 100;
+
+		}
+
+		&.press {
+			display: none;
+		}
+	}
+
+	&_faq-off {
+		display: none;
+		float: none;
+		margin: 0 auto;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 49%;
+			margin-top: -10.125px;
+			margin-top: -10.125px;
+			background: url('@img/svg/arrow_up.svg') center center no-repeat;
+			display: block;
+			width: 16.25px;
+			height: 20.25px;
+			// z-index: 100;
+
+		}
+		&.active {
 			display: block;
 		}
 	}
