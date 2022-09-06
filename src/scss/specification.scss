@@ -123,6 +123,9 @@ h3 {
 
 		//RESPONSIVE 
 		@media (max-width: 1200px){
+			@include adaptive-value("font-size", 50, 20, 1200);
+		}
+		@media (max-width: 768px){
 			@include adaptive-value("font-size", 50, 20, 768);
 		}
 

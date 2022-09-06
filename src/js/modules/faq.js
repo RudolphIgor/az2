@@ -4,6 +4,7 @@ export function swipe () {
 	const content = document.querySelector('.content__text');
 	const fection = document.querySelector('.page__section_6');
 	content.style.maxHeight = '450px';
+
 	btn.addEventListener('click', () => {
 		content.style.maxHeight = content.scrollHeight + 'px';
 		btn.classList.add('press');
