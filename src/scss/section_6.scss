@@ -1,7 +1,11 @@
 .page__section_6 {
 	// @include adaptive-value('padding-bottom', 200, 70, 1920);
-	padding-bottom: 200px;
+	padding-bottom: 320px;
 
+	//RESPONSIVE 
+	@media (max-width: 1260px){
+		padding-bottom: 126px;
+	}
 	&.active {
 		@include adaptive-value('padding-bottom', 120, 70, 1920);
 	}
