@@ -4,7 +4,6 @@ const menu = document.querySelector('.menu__body');
 const header = document.querySelector('.header__container');
 
 export function slScroll() {
-	console.log(menuLinks);
 	if (menuLinks.length > 0) {
 		menuLinks.forEach(element => {
 			element.addEventListener('click', onMenuLinkClick)
