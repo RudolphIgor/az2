@@ -1,5 +1,10 @@
 .page__section_6 {
-	@include adaptive-value('padding-bottom', 200, 70, 1920)
+	// @include adaptive-value('padding-bottom', 200, 70, 1920);
+	padding-bottom: 200px;
+
+	&.active {
+		@include adaptive-value('padding-bottom', 120, 70, 1920);
+	}
 }
 
 .faq {
@@ -135,10 +140,17 @@
 .btn {
 
 	&_faq {
+		cursor: pointer;
 		float: left;
 		margin-left: 15%;
 		display: block;
 		position: relative;
+
+		//RESPONSIVE 
+		@media (max-width: 1260px){
+			float: none;
+			margin: 0 auto;
+		}
 		&::after {
 			content: '';
 			position: absolute;
@@ -149,7 +161,6 @@
 			display: block;
 			width: 16.25px;
 			height: 20.25px;
-			// z-index: 100;
 
 		}
 
@@ -159,6 +170,7 @@
 	}
 
 	&_faq-off {
+		cursor: pointer;
 		display: none;
 		float: none;
 		margin: 0 auto;
@@ -166,7 +178,7 @@
 			content: '';
 			position: absolute;
 			top: 49%;
-			margin-top: -10.125px;
+			right: 4.8vw;
 			margin-top: -10.125px;
 			background: url('@img/svg/arrow_up.svg') center center no-repeat;
 			display: block;
