@@ -1,3 +1,4 @@
+
 .footer {
 	background: #000;
 	padding: 123px 0px 123px 0px;
@@ -9,6 +10,9 @@
 		@media (max-width: 1200px){
 			padding: 0px 93px 0px 93px;
 			
+		}
+		@media (max-width: 576px){
+			padding: 0px 24px 0px 24px;
 		}
 	}
 
@@ -87,7 +91,7 @@
 		//RESPONSIVE 
 		@media (max-width: 1200px){
 			width: 100%;
-			justify-content: center;
+			justify-content: start;
 		}
 		//RESPONSIVE 
 		@media (max-width: 576px){
@@ -126,6 +130,8 @@
 		&__link {
 			
 		}
+
+		
 	}
 }
 
@@ -140,8 +146,12 @@
 	width: 374px;
 	margin: 0 auto;
 	align-items: center;
+
+	//RESPONSIVE 
+	@media (max-width: 1200px){
+		margin: 0;
+	}
 	&__list {
-		
 		display: flex;
 		width: 100%;
 		justify-content: space-between;
@@ -153,6 +163,12 @@
 			margin: 0;
 			height: 98px;
 			justify-content: start;
+		}
+
+		//RESPONSIVE 
+		@media (max-width: 474px){
+			width: 80px;
+			align-items: center;
 		}
 	}
 
@@ -166,6 +182,11 @@
 		@media (max-width: 1200px){
 			margin: 0px 0px 0px 0px;
 			
+		}
+
+		//RESPONSIVE 
+		@media (max-width: 576px){
+			font-size: 13px;
 		}
 		&:nth-child(n+4) {
 			margin: 0px 44px 0px 0px;
@@ -189,7 +210,12 @@
 			}
 		}
 		
-		
+		&_hiden {
+			//RESPONSIVE 
+			@media (max-width: 474px){
+				display: none;
+			}
+		}
 	}
 
 	&__link {
@@ -218,16 +244,93 @@
 
 	//RESPONSIVE 
 	@media (max-width: 1200px){
-		margin-right: 4.819999999999993vw;
+		// margin-right: 4.819999999999993vw;
+		margin: 0;
 	}
 
 	//RESPONSIVE 
 	@media (max-width: 992px){
 		margin-right: 3.819999999999993vw;
 	}
+
+	//RESPONSIVE 
+	@media (max-width: 576px){
+		margin: 0;
+		width: 18.2vw;
+		justify-content: space-between;
+	}
+
+	//RESPONSIVE 
+	@media (max-width: 470px){
+		width: 81%;
+	}
 	&__item {
 		margin-right: 35px;
 		margin-bottom: 23px;
+
+		& > .insta {
+			background: url('@img/svg/insta.svg') center center/ contain no-repeat;
+			width: 30px;
+			height: 30px;
+			display: block;
+			&:hover {
+				background: url('@img/svg/insta_hover.svg') center center/ contain no-repeat;
+			}
+			//RESPONSIVE 
+			@media (max-width: 576px){
+				width: 20px;
+				height: 20px;
+			}
+		}
+		/*--------------ICONS-------------------*/
+		
+		& > .vk {
+			background: url('@img/svg/vk.svg')   center center/ contain no-repeat;
+			width: 33px;
+			height: 19px;
+			display: block;
+			&:hover {
+				background: url('@img/svg/vk_hover.svg')  center center/ contain no-repeat;
+			}
+			//RESPONSIVE 
+			@media (max-width: 576px){
+				width: 20px;
+				height: 12px;
+			}
+		}
+		& > .telegram {
+			background: url('@img/svg/telegram.svg')  center center/ contain no-repeat;
+			width: 28px;
+			height: 23px;
+			display: block;
+			&:hover {
+				background: url('@img/svg/telegram_hover.svg')  center center/ contain no-repeat;
+			}
+			//RESPONSIVE 
+			@media (max-width: 576px){
+				width: 17px;
+				height: 14px;
+			}
+		}
+		& > .whatsup {
+			background: url('@img/svg/whatsup.svg')  center center/ contain no-repeat;
+			width: 33px;
+			height: 33px;
+			display: block;
+			&:hover {
+				background: url('@img/svg/whatsup_hover.svg')  center center/ contain no-repeat;
+			}
+			//RESPONSIVE 
+			@media (max-width: 576px){
+				width: 20px;
+				height: 20px;
+			}
+		}
+
+		//RESPONSIVE 
+		@media (max-width: 576px){
+			margin: 0;
+		}
 
 		&:nth-child(2) {
 			margin-right: 0;
@@ -249,12 +352,23 @@
 
 	font-size: 17px;
 
+	//RESPONSIVE 
+	@media (max-width: 576px){
+		font-size: 13px;
+	}
+
 	&__phone {
 		color: #fff;
 		margin: 0px 0px 35px 0px;
 		position: relative;
 		// margin: 35px 0px 15px 0px;
 		z-index: 2;
+
+		//RESPONSIVE 
+		@media (max-width: 576px){
+			margin: 0px 0px 12px 0px;
+			
+		}
 
 		&::before {
 			content: '';
@@ -266,6 +380,19 @@
 			width: 31px;
 			height: 31px;
 			z-index: 5;
+
+			//RESPONSIVE 
+			@media (max-width: 1200px){
+				left: -4vw;
+			}
+
+			@media (max-width: 888px){
+				left: -6vw;
+			}
+			//RESPONSIVE 
+			@media (max-width: 576px){
+				display: none;
+			}
 			
 		}
 		
@@ -276,5 +403,22 @@
 	}
 }
 
+.footer__logo_hiden {
+	display: none;
+	//RESPONSIVE 
+	@media (max-width: 576px){
+		display: block;
+	}
+}
+
+.copy-right_hiden {
+	margin: 10px 0px 0px 0px;
+	font-size: 13px;
+	display: none;
+	line-height: 1.8em;
+	@media (max-width: 576px){
+		display: block;
+	}
+}
 
 
