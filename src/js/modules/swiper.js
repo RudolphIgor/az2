@@ -1,21 +1,10 @@
 
+	//Slyder Review
 	const swiper = new Swiper('.review__swiper',{
 		loop: true,
 		slidesPerView: 3,
 		slidesPerGroup: 3,
 		spaceBetween: 13,
-		// If we need pagination
-		// pagination: {
-		// 	el: '.swiper-pagination',
-		// 	clickable: true,
-		// },
-		// Navigation arrows
-		// navigation: {
-		// 	enable: true,
-		// 	nextEl: '.swiper-button-next-unique',
-		// 	prevEl: '.swiper-button-prev-unique',
-			
-		// },
 		breakpoints: {
 			320: {
 				slidesPerView: 1,
@@ -53,5 +42,22 @@
 			},
 		},
 	});
+
+	//Slider Gallery
+	const swiperGallery = new Swiper('.gallery__swiper', {
+		// loop: true,
+		slidesPerView: 3,
+		grid: {
+			rows: 2,
+			fill: 'row',
+		},
+		// slidesPerColumnFill: 'column',
+		autoHeight: false,
+		// And if we need scrollbar
+		// scrollbar: {
+		//   el: '.swiper-scrollbar',
+		// },
+	  });
+
 
 	
