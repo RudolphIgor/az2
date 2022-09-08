@@ -8,4 +8,4 @@ import * as tabs from "./modules/tabs.js";
 flsFunctions.isWebp();
 slowlyScroll.slScroll();
 burger.iconsactive();
-// btn_faq.swipe();
+btn_faq.swipe();
