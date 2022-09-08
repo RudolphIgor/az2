@@ -18,10 +18,26 @@
 	//sider
 
 	&__wrapper {
-		position: relative;
 		border: 1px solid red;
+		position: relative;
 		overflow: hidden;
-		height: 1296px;
+		// height: 67.5vw;
+		// height: 100%;
+		@include adaptive-value('height', 1296, 1020, 1920);
+		width: 100%;
+		display: flex;
+
+		//RESPONSIVE 
+		@media (max-width: 1600px){
+			@include adaptive-value('height', 1237, 342, 1600);
+		}
+
+		@media (max-width: 1440px){
+			@include adaptive-value('height', 1109, 200, 1440);
+		}
+		@media (max-width: 1200px){
+			@include adaptive-value('height', 912, 200, 1200);
+		}
 
 	}
 	&__block {
@@ -124,10 +140,7 @@
 	}
 
 	&__item {
-		
 		max-width: 520px;
-		border: 1px solid red;
-		overflow: hidden;
 		& > a {
 			display: flex;
 			width: 100%;
