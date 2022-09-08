@@ -5,3 +5,8 @@ $maxWidthContainer: 1610;
 	$addSize: $startSize - $minSize;
 	#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
 }
+
+@mixin adaptive-value2($property, $startSize, $minSize, $maxWidth, $minWidth) {
+	$addSize: $startSize - $minSize;
+	#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - #{$minWidth + px}) / #{$maxWidth - $minWidth}));
+}

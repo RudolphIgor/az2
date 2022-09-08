@@ -1,5 +1,5 @@
 
-	const swiper = new Swiper('.swiper',{
+	const swiper = new Swiper('.review__swiper',{
 		loop: true,
 		slidesPerView: 3,
 		slidesPerGroup: 3,

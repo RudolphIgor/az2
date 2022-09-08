@@ -1,0 +1,1 @@
+const tabs = document.querySelector('.tabs__list');
