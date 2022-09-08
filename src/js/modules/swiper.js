@@ -45,7 +45,7 @@
 
 	//Slider Gallery
 	const swiperGallery = new Swiper('.gallery__swiper', {
-		// loop: true,
+		spaceBetween: 25,
 		slidesPerView: 3,
 		grid: {
 			rows: 2,
@@ -54,9 +54,9 @@
 		// slidesPerColumnFill: 'column',
 		autoHeight: false,
 		// And if we need scrollbar
-		// scrollbar: {
-		//   el: '.swiper-scrollbar',
-		// },
+		scrollbar: {
+		  el: '.swiper-scrollbar',
+		},
 	  });
 
 

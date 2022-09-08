@@ -39,10 +39,9 @@
 	}
 
 	&__swiper {
-		// height: 100%;
-		// min-width: 0;
+
 		& .swiper-slide {
-			height: calc((100% - 20px) / 2);
+			// height: calc((100% - 20px) / 2);
 		}
 	}
 	//slider
@@ -119,23 +118,23 @@
 
 //Slider
 .slide {
-
+	width: 100px;
 	&__first {
-		&__item{
-			& > a {
-
-			}
-		}
+		
 	}
 
 	&__item {
 		
 		max-width: 520px;
 		border: 1px solid red;
+		overflow: hidden;
 		& > a {
-			display: block;
+			display: flex;
 			width: 100%;
 
+			& > img {
+				width: 100%;
+			}
 			& > img .first{
 				width: 100%;
 				border-radius: 20px 0 0 0;
