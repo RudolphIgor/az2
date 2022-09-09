@@ -1,27 +1,30 @@
-<section class="page__section page__section_2">
-	<h1>page__section_2</h1>
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse incidunt animi dolor libero. Modi aliquam esse iste eum nam enim consequuntur quia hic accusantium! Molestias distinctio at labore vitae officiis.
-	</section>
+<section class="page__section page__section_2 gallery">
+	<div class="container gallery__container">
+		<div class="title">
+			<h2>ПОРТФОЛИО</h2>
+		</div>
+		<div class="tabs">
+			<ul class="tabs__list">
+				<li class="tabs__item active" data-tab="#all">Все</li>
+				<li class="tabs__item" data-tab="#wedding">Свадебная фотосессия</li>
+				<li class="tabs__item" data-tab="#personal">Индивидуальная фотосессия</li>
+				<li class="tabs__item" data-tab="#family">Семейная, Love story</li>
+			</ul>
+		</div>
+		<div class="magicWrapper">
+			<div class="magicBlock show" id="all">
+				@@include('slider__all.html', {})
+			</div>
+			<div class="magicBlock" id="wedding">
+				@@include('slider__wedding.html', {})
+			</div>
+			<div class="magicBlock" id="personal">
+				@@include('slider__personal.html', {})
+			</div>
+			<div class="magicBlock" id="family">
+				@@include('slider__family.html', {})
+			</div>
+		</div>
+		<a href="#" class="btn">Смотреть ещё</a>
+	</div>
+</section>

@@ -4,20 +4,26 @@
 @@include('html/head.html', {
 "title":"Главная"
 })
-
 <body>
-	@@include('html/header.html', {})
-	<main class="page">
-		@@include('html/section_1.html', {})
-		<!-- @@include('html/section_2.html', {}) -->
-		@@include('html/section_3.html', {})
-		@@include('html/section_4.html', {})
-		@@include('html/section_5.html', {})
-		@@include('html/section_6.html', {})
-		@@include('html/section_7.html', {})
-	</main>
-	@@include('html/footer.html', {})
+	<div class="wrapper">
+		@@include('html/header.html', {})
+		<main class="page">
+			@@include('html/section_1.html', {})
+			@@include('html/section_2.html', {})
+			@@include('html/section_3.html', {})
+			@@include('html/section_4.html', {})
+			@@include('html/section_5.html', {})
+			@@include('html/section_6.html', {})
+			@@include('html/section_7.html', {})
+		</main>
+		@@include('html/footer.html', {})
+	</div>
+	
+	
+	
 	<script src="files/swiper-bundle.min.js"></script>
+	<script src="files/jquery-3.6.1.min.js"></script>
+	<script src="files/jquery.fancybox.min.js"></script>
 	<script src="js/app.min.js"></script>
 </body>
 

@@ -11,6 +11,20 @@ body {
 overflow-x: hidden;
 }
 
+html,
+body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 1 auto;
+}
 ul,
 ol,
 li {
@@ -103,19 +117,18 @@ h3 {
 }
 
 .title {
-	margin: 0px 0px 60px 0px;
+	margin: 0px auto 60px auto;
 	text-align: center;
 
 	//RESPONSIVE 
 	//RESPONSIVE 
 	@media (max-width: 576px){
-		margin: 0px 0px 40px 0px;
+		margin: 0px auto 40px auto;
 	}
 	& > h2 {
 		font-family: Cormorant;
 		color:#4a3039;
 		text-transform: uppercase;
-		// font-size: 50px;
 		@include adaptive-value("font-size", 50, 20, 1920);
 		font-weight: normal;
 		position: relative;
